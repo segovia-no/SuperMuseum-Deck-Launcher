@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=SuperMuseum Deck Launcher Installer
+Comment=Adds Super Museum to Steam as a non-Steam game
+Exec=bash -c 'curl -fsSL https://raw.githubusercontent.com/segovia-no/SuperMuseum-Deck-Launcher/main/install.sh -o /tmp/supermuseum-install.sh && bash /tmp/supermuseum-install.sh'
+Icon=applications-games
+Terminal=false
+Type=Application
+Categories=Game;
