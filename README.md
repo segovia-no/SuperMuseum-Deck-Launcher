@@ -19,15 +19,14 @@ All steps happen in **Desktop Mode** (Steam button > Power > Switch to Desktop).
 
 ### Option A: download and double-click (easiest)
 
-1. On the Steam Deck, open this link in the browser:
+1. On the Steam Deck, open this link in the browser and the installer downloads immediately:
 
-   **[SuperMuseum-Installer.desktop](https://github.com/segovia-no/SuperMuseum-Deck-Launcher/blob/main/SuperMuseum-Installer.desktop)**
+   **[Download SuperMuseum-Installer.desktop](https://github.com/segovia-no/SuperMuseum-Deck-Launcher/releases/latest/download/SuperMuseum-Installer.desktop)**
 
-2. Click the **Download raw file** button (the down-arrow icon at the top right of the file view).
-3. Open the **Downloads** folder in Dolphin (the file manager) and double-click `SuperMuseum-Installer.desktop`.
-4. If you are asked whether to trust or run the file, choose **Continue** / **Execute**.
-5. Confirm the "Add to Steam" prompt if Steam shows one.
-6. Switch back to Game Mode. Super Museum is in your library under **Non-Steam**.
+2. Open the **Downloads** folder in Dolphin (the file manager) and double-click `SuperMuseum-Installer.desktop`.
+3. If you are asked whether to trust or run the file, choose **Continue** / **Execute**.
+4. Confirm the "Add to Steam" prompt if Steam shows one.
+5. Switch back to Game Mode. Super Museum is in your library under **Non-Steam**.
 
 ### Option B: terminal one-liner
 

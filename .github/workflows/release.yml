@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create release with installer assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$TAG" \
+            SuperMuseum-Installer.desktop \
+            install.sh \
+            --title "$TAG" \
+            --notes "Download **SuperMuseum-Installer.desktop** on your Steam Deck (Desktop Mode) and double-click it. See the README for details."
