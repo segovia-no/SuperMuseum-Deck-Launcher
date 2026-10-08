@@ -38,8 +38,7 @@ curl -fsSL https://raw.githubusercontent.com/segovia-no/SuperMuseum-Deck-Launche
 
 ## Recommended settings in Game Mode
 
-- **Controller layout:** open the game's controller settings and pick the **Web Browser** template (right trackpad as mouse, triggers as clicks). If the game supports gamepads, a **Gamepad** template works better.
-- **On-screen keyboard:** press **Steam + X**.
+- **Controls:** Super Museum is played with the Deck's built-in gamepad. No mouse or keyboard setup is needed. If the buttons do not respond, open the game's controller settings and select the **Gamepad** template.
 - **Quitting:** kiosk mode has no close button. Press the **Steam** button and choose **Exit Game**.
 - **Artwork:** Steam shows a generic image by default. Use the [SteamGridDB Decky plugin](https://github.com/SteamGridDB/decky-steamgriddb) or, in Desktop Mode, right-click the entry > Manage > Set custom artwork.
 
