@@ -25,6 +25,7 @@ All versions are listed on the [Releases page](https://github.com/segovia-no/Sup
 2. Creates a dedicated Chrome profile for the game, so its saves, cache and settings stay separate from your normal browsing.
 3. Creates a launcher that opens the site in Chrome kiosk mode (fullscreen, no address bar or tabs).
 4. Adds that launcher to Steam as **Super Museum**, so Steam shows "Super Museum" as the game you are playing instead of "Google Chrome".
+5. Applies the library artwork (cover, wide capsule, banner, logo and icon) from the [`art/`](art/) folder.
 
 A small progress window shows each step, followed by a success or error message. A log is written to `/tmp/supermuseum-deck-launcher.log`.
 
@@ -40,11 +41,11 @@ curl -fsSL https://raw.githubusercontent.com/segovia-no/SuperMuseum-Deck-Launche
 
 - **Controls:** Super Museum is played with the Deck's built-in gamepad. No mouse or keyboard setup is needed. If the buttons do not respond, open the game's controller settings and select the **Gamepad** template.
 - **Quitting:** kiosk mode has no close button. Press the **Steam** button and choose **Exit Game**.
-- **Artwork:** Steam shows a generic image by default. Use the [SteamGridDB Decky plugin](https://github.com/SteamGridDB/decky-steamgriddb) or, in Desktop Mode, right-click the entry > Manage > Set custom artwork.
+- **Artwork:** applied automatically by the installer. If it does not appear, restart Steam. You can still replace any image from the game's page in Game Mode (gear icon > Customize) or with the [SteamGridDB Decky plugin](https://github.com/SteamGridDB/decky-steamgriddb).
 
 ## Uninstall
 
-Remove the launcher files and the game's Chrome profile (this also deletes any progress stored in that profile):
+Remove the launcher files, the artwork and the game's Chrome profile (this also deletes any progress stored in that profile):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/segovia-no/SuperMuseum-Deck-Launcher/main/install.sh | bash -s -- --uninstall
@@ -68,6 +69,8 @@ Then remove the entry from Steam: select Super Museum in your library > Manage >
 | Google Chrome | Flatpak `com.google.Chrome` (user install) |
 | Launcher | `~/.local/share/applications/SuperMuseum.desktop` |
 | Chrome profile for the game | `~/.var/app/com.google.Chrome/config/webapps/SuperMuseum` |
+| Downloaded artwork | `~/.local/share/supermuseum-deck-launcher/art` |
+| Steam artwork | `~/.steam/steam/userdata/<user id>/config/grid/<shortcut id>*.png` |
 
 ## License
 
